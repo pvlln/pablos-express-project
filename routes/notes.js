@@ -26,4 +26,11 @@ notes.post('/', async(req,res) => {
     }
 })
 
+// notes.delete('/:id', async(req,res) => {
+//     const noteId = req.params.id;
+//     const data = await readFromFile('./db/db.json');
+//     const jsonRes = res.json(JSON.parse(data));
+//     json.filter((jsonRes) => noteId)
+// })
+
 module.exports = notes;
