@@ -1,16 +1,21 @@
+// import router
 const notes = require('express').Router();
+// import uuid random id generator
 const {v4: uuidv4} = require('uuid');
+// import functions
 const {
     readFromFile,
     readAndAppend,
     writeToFile,
   } = require('../helpers/fsUtils');
 
+// async request to load notes onto page
 notes.get('/', async(req,res) => {
     const notes = await readFromFile('./db/db.json');
     res.json(JSON.parse(notes));
 });
 
+// async request to post onto notes db
 notes.post('/', async(req,res) => {
     const { title, text } = req.body || {};
     if (title && text){
