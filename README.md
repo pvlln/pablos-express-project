@@ -40,7 +40,7 @@ Here is a screenshot of my application in action:
 ![App demo screenshot](./Screen%20Shot%202023-04-26%20at%209.31.28%20AM.png)
 
 Here is the link to my deployed application:
-
+https://pacific-brushlands-41367.herokuapp.com/
 
 ## Usage
 To use this app, simply access the website and start writing notes!
